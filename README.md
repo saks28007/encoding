@@ -47,11 +47,11 @@ _# Install the category_encoders library if not already installed (!pip install 
 
 **3. Label Encoding :**
 
-*-Create a list of categorical data (e.g., ['Low','High','Medium','High','Medium']).
+*-Create a list of categorical data (e.g., ['Low','High','Medium','High','Medium']).*
 
--Apply LabelEncoder() to convert these categories into numerical values.
+*-Apply LabelEncoder() to convert these categories into numerical values.*
 
--Print the encoded data for verification.*
+*-Print the encoded data for verification.*
 ```
 from sklearn.preprocessing import LabelEncoder
 data=['Low','High','Medium','High','Medium']
@@ -62,6 +62,7 @@ print(f"Label encoded data:\n{encoded_data}")
 ```
 
 **4. One-Hot Encoding :**
+
 *-Create a list of categorical data (e.g., ['Red','Blue','Green','Blue','Red']).*
 
 *-Use pandas.get_dummies() to create one-hot encoded columns from the data.*
@@ -78,6 +79,7 @@ print(one_hot_encoded)
 ```
 
 **5. Ordinal Encoding :**
+
 *-Create a list of ordered categorical data (e.g., [['Low'], ['High'], ['Medium']]).*
 
 *-Define a specific order for the categories using the OrdinalEncoder() and apply it.*
@@ -93,6 +95,7 @@ print(f"\nOrdinal Encoded Data:\n{encoded_data}")
 ```
 
 **6. Target Encoding :**
+
 *-Create a DataFrame with both categorical data (Color) and the target variable (Target).*
 
 *-Convert the Target column to integer type.*
@@ -116,6 +119,7 @@ print(f"\nTarget encoded:\n{encoded_data}")
 ```
 
 **7. Binary Encoding :**
+
 *-Create a list of categorical data (e.g., ['Red','Green','Blue','Blue','Grey']).*
 
 *-Use BinaryEncoder from category_encoders to apply binary encoding on the data.*
@@ -134,6 +138,7 @@ print(encoded_data)
 ```
 
 **8. Frequency Encoding :**
+
 *-Create a list of categorical data (e.g., ['Red','Green','Blue','Red','Red']).*
 
 *-Use value_counts() from pandas to calculate the frequency of each category.*
@@ -156,6 +161,7 @@ print("Encoded data:",encoded_data)
 ```
 
 **9. End the Experiment :**
+
 *The experiment is complete once all encoding methods are executed and results are displayed.*
 
 
