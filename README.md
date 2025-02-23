@@ -47,11 +47,11 @@ _# Install the category_encoders library if not already installed (!pip install 
 
 **3. Label Encoding :**
 
-*-Create a list of categorical data (e.g., ['Low','High','Medium','High','Medium']).*
+*~Create a list of categorical data (e.g., ['Low','High','Medium','High','Medium']).*
 
-*-Apply LabelEncoder() to convert these categories into numerical values.*
+*~Apply LabelEncoder() to convert these categories into numerical values.*
 
-*-Print the encoded data for verification.*
+*~Print the encoded data for verification.*
 ```
 from sklearn.preprocessing import LabelEncoder
 data=['Low','High','Medium','High','Medium']
@@ -63,11 +63,11 @@ print(f"Label encoded data:\n{encoded_data}")
 
 **4. One-Hot Encoding :**
 
-*-Create a list of categorical data (e.g., ['Red','Blue','Green','Blue','Red']).*
+*~Create a list of categorical data (e.g., ['Red','Blue','Green','Blue','Red']).*
 
-*-Use pandas.get_dummies() to create one-hot encoded columns from the data.*
+*~Use pandas.get_dummies() to create one-hot encoded columns from the data.*
 
-*-Print the one-hot encoded DataFrame for verification.**
+*~Print the one-hot encoded DataFrame for verification.**
 ```
 import pandas as pd
 data=['Red','Blue','Green','Blue','Red']
@@ -80,11 +80,11 @@ print(one_hot_encoded)
 
 **5. Ordinal Encoding :**
 
-*-Create a list of ordered categorical data (e.g., [['Low'], ['High'], ['Medium']]).*
+*~Create a list of ordered categorical data (e.g., [['Low'], ['High'], ['Medium']]).*
 
-*-Define a specific order for the categories using the OrdinalEncoder() and apply it.*
+*~Define a specific order for the categories using the OrdinalEncoder() and apply it.*
 
-*-Print the ordinal encoded data for verification.*
+*~Print the ordinal encoded data for verification.*
 ```
 from sklearn.preprocessing import OrdinalEncoder
 data=[['Low'],['High'],['Medium'],['High'],['Medium']]
@@ -96,13 +96,13 @@ print(f"\nOrdinal Encoded Data:\n{encoded_data}")
 
 **6. Target Encoding :**
 
-*-Create a DataFrame with both categorical data (Color) and the target variable (Target).*
+*~Create a DataFrame with both categorical data (Color) and the target variable (Target).*
 
-*-Convert the Target column to integer type.*
+*~Convert the Target column to integer type.*
 
-*-Use TargetEncoder from category_encoders to encode the Color column based on the target variable.*
+*~Use TargetEncoder from category_encoders to encode the Color column based on the target variable.*
 
-*-Print the target encoded data for verification.*
+*~Print the target encoded data for verification.*
 ```
 !pip install category_encoders
 import pandas as pd
@@ -120,11 +120,11 @@ print(f"\nTarget encoded:\n{encoded_data}")
 
 **7. Binary Encoding :**
 
-*-Create a list of categorical data (e.g., ['Red','Green','Blue','Blue','Grey']).*
+*~Create a list of categorical data (e.g., ['Red','Green','Blue','Blue','Grey']).*
 
-*-Use BinaryEncoder from category_encoders to apply binary encoding on the data.*
+*~Use BinaryEncoder from category_encoders to apply binary encoding on the data.*
 
-*-Print the binary encoded DataFrame for verification.*
+*~Print the binary encoded DataFrame for verification.*
 ```
 import category_encoders as ce
 data=['Red','Green','Blue','Blue','Grey']
@@ -139,13 +139,13 @@ print(encoded_data)
 
 **8. Frequency Encoding :**
 
-*-Create a list of categorical data (e.g., ['Red','Green','Blue','Red','Red']).*
+*~Create a list of categorical data (e.g., ['Red','Green','Blue','Red','Red']).*
 
-*-Use value_counts() from pandas to calculate the frequency of each category.*
+*~Use value_counts() from pandas to calculate the frequency of each category.*
 
-*-Encode the data by replacing each category with its frequency.*
+*~Encode the data by replacing each category with its frequency.*
 
-*-Print the frequency encoded data for verification.*
+*~Print the frequency encoded data for verification.*
 ```
 import pandas as pd
 data=['Red','Green','Blue','Red','Red']
@@ -162,7 +162,7 @@ print("Encoded data:",encoded_data)
 
 **9. End the Experiment :**
 
-*The experiment is complete once all encoding methods are executed and results are displayed.*
+*~The experiment is complete once all encoding methods are executed and results are displayed.*
 
 
 
